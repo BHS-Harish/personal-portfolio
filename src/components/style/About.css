@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+:root{
+   --second:#FFEE78; 
+   font-family: 'Fredoka One', cursive;
+}
+#about-container{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    background-color: #7540EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: open-about;
+    animation-duration:1000ms;
+    left: 0;
+}
+#about-container>h1{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#about-container>h1>p{
+    display: inline-block;
+    margin: 0 5px;
+}
+#about-container>h1>p::first-letter{
+    color: #FFEE78;
+}
+.about-container-myimage{
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    animation-name: my-image-animation;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    background-image: url(/src/asset/my-image.jpeg);
+    background-size: cover;
+}
+#about-container>h2,h3{
+    font-weight: 400;
+}
+#about-container>h2{
+    color: white;
+}
+#about-container>h3{
+    color: var(--second);
+}
+.my-skills-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.my-skills{
+    width: 150px;
+    height: 150px;
+    background-color: #7540EB;
+    border: 10px solid #FFEE78;
+    /* border-bottom: none; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    border-radius: 50%;
+    transition: 500ms;
+    cursor: pointer;
+    margin: 20px;
+}
+.my-skills:hover{
+    background-color: #FFEE78;
+    color: #7540EB;
+}
+.about-qualifi{
+    color: #FFEE78;
+    font-weight: 400;
+}
+.about-qualifi>h2{
+    color: white;
+    font-weight: 400;
+}
+.underline-subtitle{
+    padding-bottom: 5px;
+    border-bottom: 5px solid #FFEE78;
+}
+.certificate-container{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    border: 4px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.certificate-container>p:first-child{
+    font-size: 30px;
+    color: white;
+    margin: 20px;
+}
+.certificate-container>p:nth-child(2){
+    font-size: 20px;
+    color: #FFEE78;
+    margin: 5px;
+    margin-left: 20px;
+}
+.certificate-container>a>button{
+    background-color: white;
+    padding: 10px 30px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Fredoka One', cursive;
+    font-weight: 400;
+    color: #7540EB;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    #about-container>h1{
+        color: white;
+        font-weight: 400;
+        font-size: 35px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    #about-container>h1>p{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .about-container-myimage{
+        width: 170px;
+        height: 170px;
+    }
+    #about-container>h2{
+        margin: 20px 50px;
+        line-height: 30px;
+        text-align: center;
+    }
+    #about-container>h3{
+        margin: 20px 30px;
+        line-height: 30px;
+        text-align: center;
+        word-spacing: 5px;
+    }
+    .my-skills{
+        width: 100px;
+        height: 100px;
+        font-size: 15px;
+        border: 5px solid #FFEE78;
+        margin: 15px;
+    }
+    .certificate-container{
+        width: 250px;
+        height: 250px;
+        border-radius: 20px;
+        border: 4px solid white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .certificate-container>p:first-child{
+        font-size: 20px;
+        color: white;
+        margin: 20px;
+    }
+    .certificate-container>p:nth-child(2){
+        font-size: 15px;
+        color: #FFEE78;
+        margin-left: 20px;
+    }
+    .certificate-container>a>button{
+        background-color: white;
+        padding: 10px 30px;
+        border: 0;
+        border-radius: 10px;
+        font-size: 15px;
+        font-family: 'Fredoka One', cursive;
+        font-weight: 400;
+        color: #7540EB;
+        cursor: pointer;
+        position: relative;
+        left: 50%;
+        margin-top: 10px;
+        transform: translateX(-50%);
+    }
+}
+@keyframes open-about {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(50%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes my-image-animation {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}

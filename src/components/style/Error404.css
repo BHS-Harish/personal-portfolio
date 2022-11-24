@@ -1,0 +1,27 @@
+#Error404-container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Error404-container>img{
+    width: 400px;
+    height: auto;
+}
+#Error404-container>h1{
+    color: #FFEE78;
+    font-weight: 400;
+}
+#Error404-container>a{
+    color: white;
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    #Error404-container>img{
+        width: 220px;
+        height: auto;
+        margin: 0;
+    }
+}

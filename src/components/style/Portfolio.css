@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+:root{
+   --second:#FFEE78; 
+   font-family: 'Fredoka One', cursive;
+}
+#portfolio-container{
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    background-color: #7540EB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation-name: open-portfolio;
+    animation-duration:1000ms;
+    left: 0;
+}
+#portfolio-container>h1{
+    color: white;
+    font-weight: 400;
+    font-size: 45px;
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#portfolio-container>h1>p{
+    display: inline-block;
+    margin: 0 5px;
+}
+#portfolio-container>h1>p::first-letter{
+    color: #FFEE78;
+}
+.underline-subtitle{
+    padding-bottom: 5px;
+    border-bottom: 5px solid #FFEE78;
+}
+#web-projects-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-project-container{
+    width: 340px;
+    height: 340px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+.portfolio-project-image{
+    width: 100%;
+    height: 55%;
+    border-radius: 30px;
+    background-color: white;
+    margin: 0;
+    background-size: cover;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.511);
+}
+.portfolio-project-desc{
+    width: 100%;
+    height: 43%;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 400;
+    color: #7540EB;
+}
+.portfolio-project-desc>a>button{
+    padding: 8px 20px;
+    background-color: #7540EB;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 400;
+}
+#vanillai{
+    background-image: url(/src/asset/vanillai.png);
+}
+#portfolio{
+    background-image: url(/src/asset/portfolio.png);
+}
+#ytmp3{
+    background-image: url(/src/asset/ytmp3.png);
+}
+#pms{
+    background-image: url(/src/asset/pms.png);
+}
+#thirukkuraal{
+    background-image: url(/src/asset/thirukkural.png);
+}
+@media screen and (min-width:320px) and (max-width:768px) {
+    #portfolio-container>h1{
+        color: white;
+        font-weight: 400;
+        font-size: 35px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    #portfolio-container>h1>p{
+        display: inline-block;
+        margin: 0 5px;
+    }
+    .portfolio-project-container{
+        width: 300px;
+        height: 300px;
+        background-color: white;
+        border-radius: 30px;
+    }
+}
+@keyframes open-portfolio {
+    from{
+        opacity: 0.0;
+    }
+    to{
+        opacity: 1.0;
+    }
+}
