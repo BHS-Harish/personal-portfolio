@@ -1,0 +1,92 @@
+.nav-bar{
+    height: 13vh;
+    width: 100%;
+    position: sticky;
+    top:0px;
+}
+.main{
+    height: 75vh;
+    position: relative;
+}
+.home-btn{
+    padding: 13px 20px;
+    margin: 5px;
+    font-family: 'Fredoka', sans-serif;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.home-btn:hover{
+    color:#5463FF;
+}
+.main-section:first-child{
+    padding-left: 70px;
+}
+.home-img{
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    animation: homeimg 1000ms ease-in 1000ms infinite alternate;
+}
+.home-footer{
+    height: 12vh;
+}
+@media screen and (max-width:767px) {
+    .main-section{
+        height: 37.5vh !important;
+    }
+    .main-section:first-child{
+        padding-left: 10px;
+    }
+    .menu{
+        font-size: 20px !important;
+    }
+    .home-img{
+        transform: translateY(-25px);
+    }
+}
+@media screen and (min-width:768px){
+    .hey-there{
+        font-size: 2rem;
+    }
+    .name{
+        font-size: 3rem !important;
+    }
+    .enthusiast{
+        font-size: 1.2rem !important;
+    }
+    .home-img{
+        width: 60% !important;
+        height: auto !important;
+    }
+    .main::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left:50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 150px;
+        background-image: url('../assets/home-overlay.png');
+        background-size: cover;
+    }
+    .main::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left:50%;
+        transform: translateX(-50%);
+        width: 120px;
+        height: 120px;
+        background-image: url('../assets/star.png');
+        background-size: cover;
+    }
+}
+@keyframes homeimg {
+    from{
+        transform: translateY(5px);
+    }
+    to{
+        transform: translateY(-10px);
+    }
+}

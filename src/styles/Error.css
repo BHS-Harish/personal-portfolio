@@ -1,0 +1,31 @@
+.back-btn{
+    border: none;
+    color: #5463FF !important;
+}
+.back-btn:hover{
+    color: #5463FF;
+    background-color: #FFEE78 !important;
+    transition: 1s;
+}
+@media screen and (max-width:767px) {
+    .error-container:first-child{
+        height: 60%;
+        justify-content: end !important;
+    }
+    .error-container:last-child{
+        height: 40%;
+        justify-content: start !important;
+        padding-top: 40px;
+    }
+    .error-img{
+        height: 90%;
+    }
+}
+@media screen and (min-width:768px){
+    .error-container{
+        height: 100%;
+    }
+    .error-img{
+        height: 70%;
+    }
+}

@@ -1,0 +1,80 @@
+.contact-container{
+    display: grid;
+    gap:20px
+}
+.contact-icon{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.linkedin{
+    font-size: 5rem;
+    grid-area: linkedin;
+    color: #5463FF;
+}
+.whatsapp{
+    grid-area: whatsapp;
+    font-size: 3rem;
+    color:#00F836;
+}
+.mail{
+    font-size: 3rem;
+    grid-area: mail;
+    color: #FF0000;
+}
+.github{
+    font-size: 3rem;
+    grid-area: github;
+}
+.instagram{
+    font-size: 3rem;
+    grid-area: instagram;
+    color: #EF0959;
+}
+.facebook{
+    grid-area: facebook;
+    font-size: 3rem;
+    color:#1877F2;
+}
+.twitter{
+    grid-area: twitter;
+    font-size: 3rem;
+    color: #1D9BF0;
+}
+.address{
+    font-size: 3rem;
+    grid-area: address;
+    color:orange;
+}
+@media screen and (max-width:767px) {
+    .contact-container{
+        width: 90%;
+        height: 90%;
+        grid-template-areas: 'linkedin linkedin'
+        'github mail'
+        'github facebook'
+        'whatsapp twitter'
+        'address instagram';
+        gap: 15px;
+    }
+    .contact-icon{
+        padding: 20px;
+        font-size: 35px;
+    }
+    .linkedin{
+        font-size: 3rem;
+    }
+}
+@media screen and (min-width:768px){
+    .contact-container{
+        width: 60%;
+        height: 70%;
+        grid-template-areas: 'linkedin linkedin whatsapp mail github instagram'
+        'linkedin linkedin facebook facebook twitter twitter'
+        'address address address address address address ';
+    }
+}
