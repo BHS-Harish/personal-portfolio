@@ -38,19 +38,40 @@ export const programingIcon = [
     {
         alt: "Visual Studio Code",
         src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+    },
+    {
+        alt:"Firebase",
+        src:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
     }
 ]
 
 export const experience = [
     {
+        title:"Front End Developer Intern",
+        organization:"Infotrixs",
+        duration:"Augest 2023 - 1 Month",
+        certUrl:"https://drive.google.com/file/d/1t7--ID4--_NRalHbRyG0h4Y9XzvYyHwV/view?usp=sharing",
+        lorUrl:"https://drive.google.com/file/d/1XjuD9QOQ4-RV1J780o1H514xZvDJz6aq/view?usp=sharing"
+    },
+    {
+        title:"Full Stack Developer Intern",
+        organization:"Bharat Intern",
+        duration:"July 2023 - 1 Month",
+        certUrl:"https://drive.google.com/file/d/15gqQgpTevs6nzxXi0iFQWr_J0R9M6i-U/view?usp=sharing"
+    }
+    ,
+    {
         title: "ReactJs Intern",
         organization: "Sync Intern's",
-        duration: "May 2023 - June 2023"
+        duration: "May 2023 - 1 Month",
+        certUrl:"https://drive.google.com/file/d/1DGT5-NBwv5EEzikUquxRkbQPF3gBdloX/view?usp=sharing",
+        lorUrl:"https://drive.google.com/file/d/1JB2Vjecmd-BXElSMhAaKosF4sm1o-SJ_/view?usp=sharing"
     },
     {
         title: "Web Developer Intern",
         organization: "Oasis Infobyte",
-        duration: "May 2023 - June 2023"
+        duration: "May 2023 - 1 Month",
+        certUrl:"https://drive.google.com/file/d/1fL7F39ajKhgAYMkd29FjvBz9RsioKz35/view?usp=sharing"
     }
 ]
 
@@ -89,7 +110,7 @@ export const education = [
         duration: "2020 - 2023"
     }
 ]
-export const path = ["linkbowl", "skillcert", "chatzee", "vanillai", "youtube-to-mp3", "personal-website", "rainny", "codebee", "thirukkural", "pms"]
+export const path = ["linkbowl", "skillcert","bhsthoughts", "chatzee", "bhsmeets","vanillai", "youtube-to-mp3", "personal-website", "rainny", "codebee", "thirukkural", "pms"]
 export const projects = {
     "web": [
         {
@@ -132,6 +153,24 @@ export const projects = {
             ]
         },
         {
+            "name":"BHS Thoughts",
+            "description":"Personal Blogging Website",
+            "techUsed":["ReactJs","Firebase","CSS","Antd","Bootstrap"],
+            "livePreview":"https://bhsthoughts.netlify.app",
+            "bannerUrl":"https://ik.imagekit.io/balaharisankar/bhsthoughts-logo.png",
+            "path":"bhsthoughts",
+            "details":["BHS Thoughts is a personal blogging wesbite and it was developed using reactjs as frontend and firebase as backend",
+            "The admin easily add their thoughts as text,images or youtube video"],
+            "screenshots":[
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts1.png",
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts2.png",
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts3.png",
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts4.png",
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts5.png",
+                "https://ik.imagekit.io/balaharisankar/bhsthoughts/bhsthouhts6.png"
+            ]
+        },
+        {
             "name": "ChatZee",
             "description": "A Messenger app",
             "techUsed":["ReactJs","Firebase","CSS","google auth"],
@@ -145,6 +184,23 @@ export const projects = {
                 "https://ik.imagekit.io/balaharisankar/chatzee/chatzee2.png",
                 "https://ik.imagekit.io/balaharisankar/chatzee/chatzee3.png",
                 "https://ik.imagekit.io/balaharisankar/chatzee/chatzee4.png",
+            ]
+        },
+        {
+            "name": "BHS Meets",
+            "description": "Video Conference app",
+            "techUsed":["ReactJs","Zegocloud","CSS"],
+            "livePreview": "https://youtu.be/JfeSNgbmyX0",
+            "bannerUrl": "https://ik.imagekit.io/balaharisankar/bhsmeets-logo.png",
+            "path": "bhsmeets",
+            "details": ["BHS Meets is a video conference web application and it was developed using reactjs as frontend and zegocloud API as backend",
+            "The users can easily instantly create instance meeting with BHS Meets to conduct online meeting very easier."],
+            "screenshots":[
+                "https://ik.imagekit.io/balaharisankar/bhsmeets/bhsmeets1.png",
+                "https://ik.imagekit.io/balaharisankar/bhsmeets/bhsmeets2.png",
+                "https://ik.imagekit.io/balaharisankar/bhsmeets/bhsmeets3.png",
+                "https://ik.imagekit.io/balaharisankar/bhsmeets/bhsmeets4.png",
+                "https://ik.imagekit.io/balaharisankar/bhsmeets/bhsmeets5.png"
             ]
         },
         {

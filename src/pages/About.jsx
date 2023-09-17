@@ -57,6 +57,17 @@ function About() {
                                         <h4 className='txt-white my-2'>{value.title}</h4>
                                         <p className='txt-secondary fs-5 my-1'>{value.organization}</p>
                                         <p className='txt-white fs-6 align-self-end mt-2'>{value.duration}</p>
+                                        <div className='my-2'>
+                                            {
+                                                value.certUrl?
+                                                <a className='text-decoration-none bg-white py-1 rounded px-2 mx-2' href={value.certUrl} target='_blank' rel='noreferrer'>Certificate</a>:
+                                                ""
+                                            }
+                                            {
+                                                value.lorUrl?
+                                                <a className='text-decoration-none bg-white py-1 rounded px-2 mx-2' href={value.lorUrl} target='_blank' rel='noreferrer'>LOR</a>:""
+                                            }
+                                        </div>
                                     </div>
                                 )
                             })
