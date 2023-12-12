@@ -96,6 +96,11 @@ export const certifications = [
         platform: "Udemy",
         certificareUrl: "https://ude.my/UC-fdb3a609-7cbf-413c-9440-2ee1d9940dd0/"
     },
+    {
+        courseTitle: "Figma Design Course 2023. Your Website from Start to Finish",
+        platform: "Udemy",
+        certificareUrl: "https://ude.my/UC-2a06ab68-74cb-49cd-b79d-4be90736aad4/"
+    },
 ]
 
 export const education = [
@@ -110,7 +115,7 @@ export const education = [
         duration: "2020 - 2023"
     }
 ]
-export const path = ["linkbowl", "skillcert","bhsthoughts", "chatzee", "bhsmeets","vanillai", "youtube-to-mp3", "personal-website", "rainny", "codebee", "thirukkural", "pms"]
+export const path = ["linkbowl", "skillcert","bhsthoughts", "chatzee", "bhsmeets","vanillai", "youtube-to-mp3", "personal-website", "rainny", "codebee", "mstraders","thirukkural", "pms"]
 export const projects = {
     "web": [
         {
@@ -279,6 +284,22 @@ export const projects = {
             ]
         }
         ,
+        {
+            "name": "MS Traders",
+            "description": "Website for crackers shop",
+            "techUsed":["ReactJS","CSS","Antd"],
+            "livePreview": "https://mstraders.netlify.app",
+            "bannerUrl": "https://ik.imagekit.io/balaharisankar/mstraders.png",
+            "path": "mstraders",
+            "details": ["This Website was created for one of my client .Ms Traders was an crackers shop located in the sivakasi,India. They selling crackers in best price. This website displays their products and prices"],
+            "screenshots":[
+                "https://ik.imagekit.io/balaharisankar/mstraders/ms5.png",
+                "https://ik.imagekit.io/balaharisankar/mstraders/ms3.png",
+                "https://ik.imagekit.io/balaharisankar/mstraders/ms1.png",
+                "https://ik.imagekit.io/balaharisankar/mstraders/ms2.png",
+                "https://ik.imagekit.io/balaharisankar/mstraders/ms4.png",
+            ]
+        },
         {
             "name": "Thirukkural",
             "description": "Random Thirukkural Generator - Tamil",
